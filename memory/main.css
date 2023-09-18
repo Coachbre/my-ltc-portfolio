@@ -1,0 +1,54 @@
+.card {
+  width: calc(25% - 10px);
+  height: calc(33% - 10px);
+  margin: 5px;
+  position: relative;
+
+  /* click and move  */
+  transform: scale(1);
+
+  /* FLIP  */
+  transform-style: preserve-3d;
+}
+
+/* click and move  */
+.card:active {
+  transform: scale(0.97);
+  transition: transform 0.2s;
+}
+
+.card.flip {
+  transform: rotateY(180deg);
+}
+
+.game {
+  margin: auto;
+  width: 640px;
+  height: 640px;
+  border: 2px solid black;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  font-size: 2em;
+  text-align: center;
+  backface-visibility: hidden;
+}
+
+.back {
+  background-color: black;
+  color: white;
+  background-image: url("https://github.com/drteresavasquez/images/assets/29741570/eb17c7fb-f303-4c24-8f79-e9838e736bef");
+  background-position: center;
+}
+.front {
+  background-color: white;
+  color: black;
+  transform: rotateY(180deg);
+}

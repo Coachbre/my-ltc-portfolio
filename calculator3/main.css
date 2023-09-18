@@ -1,0 +1,25 @@
+.calculation {
+  display: flex;
+  justify-content: center;
+}
+
+.allBoxes {
+  border: 1px solid black;
+  min-width: 100px;
+  height: 100px;
+  margin: 10px;
+  text-align: center;
+  font-size: 4em;
+}
+
+#answer {
+  height: 100px;
+  border: 2px solid green;
+  margin: 0 auto;
+  font-size: 4em;
+  text-align: center;
+}
+section {
+  text-align: center;
+  margin: 10px;
+}
